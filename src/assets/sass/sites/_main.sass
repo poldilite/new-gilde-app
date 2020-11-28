@@ -1,0 +1,101 @@
+.bg
+  height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url: ('./assets/img/bg/bg-main01.jpg')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  transition: all 0.7s
+
+  & h1, p
+    font-size: 3rem
+    text-align: center
+    padding: 0.5rem 0
+    color: white
+    text-transform: uppercase
+
+.btns
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  animation-name: btns
+  animation-duration: 0.5s
+  animation-delay: 0.5s
+
+.btn
+  display: flex
+  justify-content: center
+  background: rgba(0, 0, 0, 0.5)
+  border: solid 2px white
+  width: 15rem
+  margin: 1rem 1rem
+  padding: 0.3rem 0
+
+  &s > a
+    font-size: 1.5rem
+    text-transform: uppercase
+
+  &:hover
+    background: rgba(0, 0, 0, 0.2)
+    border: white solid 2px
+    color: var(--dark-green)
+
+span
+  color: var(--dark-green)
+
+h1
+  animation-name: title
+  animation-duration: 0.5s
+  animation-delay: 0.5s
+
+p
+  animation-name: paragraph
+  animation-duration: 0.5s
+  animation-delay: 0.5s
+
+@keyframes title
+  from
+    transform: translateX(calc(-100vw))
+    opacity: 0
+
+  to
+    transform: none
+    opacity: 1
+
+@keyframes paragraph
+  from
+    transform: translateX(calc(100vw))
+    opacity: 0
+
+  to
+    transform: none
+    opacity: 1
+
+@keyframes btns
+  from
+    transform: translateX(calc(-100vw))
+    opacity: 0
+
+  to
+    transform: none
+    opacity: 1
+
+@media screen and (max-width: 768px)
+  .btns
+    display: flex
+    flex-direction: column
+
+  .btn-left,
+  .btn-right
+    border-radius: 2rem
+    margin: 1rem 0
+    padding: 0.3rem 0
+
+  .bg h1, p
+    font-size: 2rem
+    margin: 0 2rem

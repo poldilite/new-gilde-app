@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "new-gilde-app"
+    }
+  },
+  "defaultProject": "new-gilde-app",
+  "cli": {
+    "analytics": "69d5b2d7-8e36-47ad-b3fa-000ec6bccc97"
+  }
 }
